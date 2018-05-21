@@ -4,3 +4,5 @@ local bot = discord.Client()
 bot:on("ready", function() 
   print(bot.user.username.." logged in!")
 end)
+
+bot:run(os.getenv("token"))
